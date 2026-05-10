@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Histoire et présentation du Port de France - Plus de 150 ans d'histoire maritime.">
+    <title>Port de France — Histoire</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Styles personnalisés -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ============================================
+         NAVIGATION (identique sur toutes les pages)
+         ============================================ -->
+    <nav class="navbar navbar-expand-lg navbar-port fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-tsunami"></i>
+                Port de <span>France</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">Histoire</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="infrastructures.html">Infrastructures</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         HERO REDUIT (Page interne)
+         ============================================ -->
+    <section class="hero-section hero-page" style="background: linear-gradient(135deg, rgba(12,45,72,0.9), rgba(20,83,116,0.8)),
+        url('https://picsum.photos/seed/port-history/1920/800.jpg'); background-size: cover; background-position: center;">
+        <div class="container">
+            <div class="hero-content text-center">
+                <span class="text-uppercase fw-bold" style="color: var(--accent); letter-spacing: 3px; font-size: 0.85rem;">
+                    Notre Histoire
+                </span>
+                <h1 class="mt-3" style="color: var(--white);">
+                    Plus de 150 Ans<br>d'Histoire <span>Maritime</span>
+                </h1>
+                <p style="color: rgba(255,255,255,0.8); max-width: 600px; margin: 0 auto;">
+                    Du petit port de pêche au premier hub logistique français, 
+                    découvrez l'évolution remarquable du Port de France.
+                </p>
+            </div>
+        </div>
+        <div class="hero-waves">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none" style="height:60px;">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,68.87-16.65,104.21-24.37,46.87-10.32,88.75-6.49,133.39,6.6,18.41,5.36,36,12.15,53.71,18.78,12.14,4.54,24.49,8.6,37.29,11.56V0Z" fill="#ffffff"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION PRÉSENTATION GÉNÉRALE
+         ============================================ -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Texte -->
+                <div class="col-lg-6 mb-5 mb-lg-0 fade-up">
+                    <span class="text-uppercase fw-bold" style="color: var(--accent); font-size: 0.85rem; letter-spacing: 2px;">
+                        Présentation
+                    </span>
+                    <h2 class="mt-2 mb-4" style="font-size: 2.2rem;">
+                        Le Port de France, Moteur Économique National
+                    </h2>
+                    <p>
+                        Le Port de France, situé à Nantes-Saint-Nazaire, est le premier port 
+                        français en termes de tonnage global. Il s'étend sur plus de 3 500 hectares 
+                        et s'étire sur 60 km le long de l'estuaire de la Loire, de Nantes à Saint-Nazaire.
+                    </p>
+                    <p>
+                        Port polyvalent par excellence, il traite tous les types de marchandises : 
+                        conteneurs, vrac liquide (pétrole, GNL), vrac solide (céréales, charbon), 
+                        marchandises conventionnelles et projets lourds. Il est également un port 
+                        de croisière en plein développement.
+                    </p>
+                    <p>
+                        Classé parmi les 20 premiers ports d'Europe, le Port de France joue un rôle 
+                        stratégique dans l'approvisionnement énergétique national et dans le commerce 
+                        extérieur de la France.
+                    </p>
+                </div>
+                <!-- Image -->
+                <div class="col-lg-6 fade-up delay-2">
+                    <img src="https://picsum.photos/seed/port-pres/600/500.jpg" 
+                         alt="Présentation du Port de France" 
+                         class="img-fluid rounded-4 shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION VALEURS
+         ============================================ -->
+    <section class="section-padding bg-light-custom">
+        <div class="container">
+            <div class="section-title fade-up">
+                <h2>Nos Valeurs</h2>
+                <p>Les principes fondamentaux qui guident notre action au quotidien.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Valeur 1 -->
+                <div class="col-md-6 col-lg-3 fade-up">
+                    <div class="port-card text-center">
+                        <div class="card-body p-4">
+                            <div class="card-icon">
+                                <i class="bi bi-lightbulb"></i>
+                            </div>
+                            <h5>Innovation</h5>
+                            <p>Investissement continu dans les technologies numériques et les process innovants pour un port plus intelligent.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Valeur 2 -->
+                <div class="col-md-6 col-lg-3 fade-up delay-1">
+                    <div class="port-card text-center">
+                        <div class="card-body p-4">
+                            <div class="card-icon">
+                                <i class="bi bi-tree"></i>
+                            </div>
+                            <h5>Durabilité</h5>
+                            <p>Engagement fort en faveur de la transition écologique : électrification, biodiversité, économie circulaire.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Valeur 3 -->
+                <div class="col-md-6 col-lg-3 fade-up delay-2">
+                    <div class="port-card text-center">
+                        <div class="card-body p-4">
+                            <div class="card-icon">
+                                <i class="bi bi-hand-thumbs-up"></i>
+                            </div>
+                            <h5>Excellence</h5>
+                            <p>Recherche permanente de la qualité et de la performance dans tous nos services et opérations.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Valeur 4 -->
+                <div class="col-md-6 col-lg-3 fade-up delay-3">
+                    <div class="port-card text-center">
+                        <div class="card-body p-4">
+                            <div class="card-icon">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <h5>Cohésion</h5>
+                            <p>Collaboration étroite avec l'ensemble des acteurs portuaires et insertion dans le tissu économique local.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION TIMELINE HISTORIQUE
+         ============================================ -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title fade-up">
+                <h2>Notre Chronologie</h2>
+                <p>Les grandes dates qui ont marqué l'histoire du Port de France.</p>
+            </div>
+
+            <div class="timeline">
+                <!-- Événement 1 -->
+                <div class="timeline-item fade-up">
+                    <div class="timeline-content">
+                        <span class="timeline-year">1866</span>
+                        <h5>Création du Port Autonome</h5>
+                        <p>Création officielle du port autonome de Nantes par décret impérial. Les premiers quais modernes sont construits le long de la Loire.</p>
+                    </div>
+                </div>
+
+                <!-- Événement 2 -->
+                <div class="timeline-item fade-up">
+                    <div class="timeline-content">
+                        <span class="timeline-year">1925</span>
+                        <h5>Extension vers Saint-Nazaire</h5>
+                        <p>Construction des premiers terminaux à Saint-Nazaire, marquant le début d'un complexe portuaire à l'échelle de l'estuaire.</p>
+                    </div>
+                </div>
+
+                <!-- Événement 3 -->
+                <div class="timeline-item fade-up">
+                    <div class="timeline-content">
+                        <span class="timeline-year">1965</span>
+                        <h5>Terminal Conteneurs</h5>
+                        <p>Inauguration du premier terminal à conteneurs de France, positionnant le port comme pionnier de la conteneurisation en Europe.</p>
+                    </div>
+                </div>
+
+                <!-- Événement 4 -->
+                <div class="timeline-item fade-up">
+                    <div class="timeline-content">
+                        <span class="timeline-year">1980</span>
+                        <h5>Terminal Méthanier</h5>
+                        <p>Mise en service du terminal méthanier de Montoir-de-Bretagne, devenu le premier hub GNL de France.</p>
+                    </div>
+                </div>
+
+                <!-- Événement 5 -->
+                <div class="timeline-item fade-up">
+                    <div class="timeline-content">
+                        <span class="timeline-year">2008</span>
+                        <h5>Grand Port Maritime</h5>
+                        <p>Transformation en Grand Port Maritime, nouvelle gouvernance modernisée. Lancement du plan stratégique 2020.</p>
+                    </div>
+                </div>
+
+                <!-- Événement 6 -->
+                <div class="timeline-item fade-up">
+                    <div class="timeline-content">
+                        <span class="timeline-year">2024</span>
+                        <h5>Port Vert du Futur</h5>
+                        <p>Lancement du programme "Port Vert 2030" : électrification complète des quais, hydrogène vert et mobilité durable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION GOUVERNANCE
+         ============================================ -->
+    <section class="section-padding bg-light-custom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0 fade-up">
+                    <img src="https://picsum.photos/seed/port-gouv/600/450.jpg" 
+                         alt="Gouvernance du port" 
+                         class="img-fluid rounded-4 shadow">
+                </div>
+                <div class="col-lg-6 ps-lg-5 fade-up delay-2">
+                    <span class="text-uppercase fw-bold" style="color: var(--accent); font-size: 0.85rem; letter-spacing: 2px;">
+                        Gouvernance
+                    </span>
+                    <h2 class="mt-2 mb-4" style="font-size: 2rem;">
+                        Une Direction Engagée
+                    </h2>
+                    <p>
+                        Le Port de France est un établissement public à caractère industriel et commercial (EPIC), 
+                        placé sous la tutelle du Ministère de la Transition écologique. Il est dirigé par un 
+                        Directeur Général nommé par décret, assisté d'un Conseil de Surveillance.
+                    </p>
+                    <!-- Chiffres clés gouvernance -->
+                    <div class="row mt-4">
+                        <div class="col-6 mb-3">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="bi bi-people-fill fs-4" style="color: var(--accent);"></i>
+                                <div>
+                                    <strong style="color: var(--primary);">12</strong>
+                                    <small class="d-block text-muted">Membres du conseil</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up-arrow fs-4" style="color: var(--accent);"></i>
+                                <div>
+                                    <strong style="color: var(--primary);">4.2 Md€</strong>
+                                    <small class="d-block text-muted">Chiffre d'affaires</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="bi bi-briefcase fs-4" style="color: var(--accent);"></i>
+                                <div>
+                                    <strong style="color: var(--primary);">1 200</strong>
+                                    <small class="d-block text-muted">Collaborateurs</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="bi bi-globe fs-4" style="color: var(--accent);"></i>
+                                <div>
+                                    <strong style="color: var(--primary);">150</strong>
+                                    <small class="d-block text-muted">Pays desservis</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h5><i class="bi bi-tsunami me-2" style="color: var(--accent);"></i>Port de France</h5>
+                    <p>Premier hub portuaire français au service de l'économie nationale et de la transition écologique.</p>
+                    <div class="social-links mt-3">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-5 mb-md-0">
+                    <h5>Navigation</h5>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">Histoire</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="infrastructures.html">Infrastructures</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-5 mb-md-0">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="services.html">Transport maritime</a></li>
+                        <li><a href="services.html">Logistique portuaire</a></li>
+                        <li><a href="services.html">Manutention</a></li>
+                        <li><a href="services.html">Stockage</a></li>
+                        <li><a href="services.html">Sûreté & Sécurité</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li><i class="bi bi-geo-alt"></i> 1 Quai de la Fosse, 44000 Nantes</li>
+                        <li><i class="bi bi-telephone"></i> +33 2 40 00 00 00</li>
+                        <li><i class="bi bi-envelope"></i> contact@portdefrance.fr</li>
+                        <li><i class="bi bi-clock"></i> Lun - Ven : 8h - 18h</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p>&copy; 2025 Port de France. Tous droits réservés.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <p><a href="#" class="me-3">Mentions légales</a><a href="#">Politique de confidentialité</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bouton retour en haut -->
+    <button class="back-to-top" id="backToTop" title="Retour en haut">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap JS + Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('mainNav');
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Back to top
+        const backToTopBtn = document.getElementById('backToTop');
+        window.addEventListener('scroll', function() {
+            backToTopBtn.classList.toggle('show', window.scrollY > 300);
+        });
+        backToTopBtn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Fade-up animations
+        const fadeObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-up').forEach(function(el) {
+            fadeObserver.observe(el);
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('.navbar-nav .nav-link').forEach(function(link) {
+            link.addEventListener('click', function() {
+                const navbarCollapse = document.getElementById('navbarNav');
+                const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+                if (bsCollapse) bsCollapse.hide();
+            });
+        });
+    </script>
+</body>
+</html>

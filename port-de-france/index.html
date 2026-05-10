@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Métadonnées de la page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Port de France - Premier hub portuaire de l'Hexagone. Découvrez nos services, infrastructures et opportunités.">
+    <title>Port de France — Accueil</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Styles personnalisés -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ============================================
+         NAVIGATION PRINCIPALE
+         ============================================ -->
+    <nav class="navbar navbar-expand-lg navbar-port fixed-top" id="mainNav">
+        <div class="container">
+            <!-- Logo du port -->
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-tsunami"></i>
+                Port de <span>France</span>
+            </a>
+
+            <!-- Bouton hamburger pour mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Liens de navigation -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Histoire</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="infrastructures.html">Infrastructures</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         HERO SECTION (Bannière principale)
+         ============================================ -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 hero-content">
+                    <!-- Badge au-dessus du titre -->
+                    <span class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill" style="font-size: 0.85rem;">
+                        <i class="bi bi-star-fill me-1"></i> Premier port maritime français
+                    </span>
+                    <!-- Titre principal -->
+                    <h1>
+                        La Porte<br>
+                        Maritime de <span>France</span>
+                    </h1>
+                    <!-- Description -->
+                    <p>
+                        Au carrefour des grandes routes maritimes mondiales, le Port de France 
+                        est le moteur économique de la région et le premier hub logistique 
+                        de l'Hexagone.
+                    </p>
+                    <!-- Boutons d'action -->
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="services.html" class="btn-hero-primary">
+                            <i class="bi bi-arrow-right me-2"></i>Nos Services
+                        </a>
+                        <a href="about.html" class="btn-hero-secondary">
+                            <i class="bi bi-play-circle me-2"></i>Découvrir
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vagues décoratives en bas du hero -->
+        <div class="hero-waves">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6.01,68.87-16.65,104.21-24.37,46.87-10.32,88.75-6.49,133.39,6.6,18.41,5.36,36,12.15,53.71,18.78,12.14,4.54,24.49,8.6,37.29,11.56V0Z" 
+                      fill="#ffffff" opacity="0.6"></path>
+                <path d="M0,0V15.81C13,36.22,44.45,52.07,73.83,56.28c46.87,6.86,90.88-8.56,135.74-16.28,44.39-7.63,87.34-4.56,130.11,7.59,36.46,10.39,70.49,27.31,107.12,35.12,50.66,10.79,101.86,6.14,152.41-1.56,57.61-8.77,113.64-26.34,171.84-31.39,63.09-5.47,123.72,5.12,182.54,21.43,15.84,4.4,31.5,9.55,47.41,13.46V0Z" 
+                      fill="#ffffff" opacity="0.8"></path>
+                <path d="M0,0V5.63C30.83,16.84,63.63,25.62,97.13,29.93c45.7,5.9,89.63-2.2,133.56-9.88,40.41-7.08,79.89-16.06,120.9-17.21,46.85-1.32,91.73,9.77,136.08,20.96,44.15,11.14,86.83,23.33,131.8,27.26,49.51,4.33,99.54-1.49,148.19-12.39,49.63-11.13,96.75-30.05,146.06-39.27,40.59-7.58,82.13-8.15,123.28-3.09v2.36Z" 
+                      fill="#ffffff"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION INTRODUCTION
+         ============================================ -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Colonne image -->
+                <div class="col-lg-6 mb-5 mb-lg-0 fade-up">
+                    <div class="position-relative">
+                        <img src="https://picsum.photos/seed/port-intro/600/500.jpg" 
+                             alt="Vue panoramique du Port de France" 
+                             class="img-fluid rounded-4 shadow">
+                        <!-- Badge flottant sur l'image -->
+                        <div class="position-absolute bottom-0 start-0 bg-white rounded-3 shadow p-3 m-4">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center"
+                                     style="width:55px; height:55px; background-color: var(--accent);">
+                                    <i class="bi bi-trophy fs-4" style="color: var(--primary);"></i>
+                                </div>
+                                <div>
+                                    <strong style="color: var(--primary); font-size: 1.3rem;">150+</strong>
+                                    <p class="mb-0" style="font-size: 0.85rem;">Années d'excellence</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Colonne texte -->
+                <div class="col-lg-6 ps-lg-5 fade-up delay-2">
+                    <span class="text-uppercase fw-bold" style="color: var(--accent); font-size: 0.85rem; letter-spacing: 2px;">
+                        Bienvenue
+                    </span>
+                    <h2 class="mt-2 mb-4" style="font-size: 2.2rem;">
+                        Un Port Stratégique au Cœur de l'Europe
+                    </h2>
+                    <p>
+                        Le Port de France est le premier complexe portuaire français et l'un des plus 
+                        importants d'Europe. Situé à l'embouchure de la Loire, il constitue une plateforme 
+                        logistique de premier plan, reliant la France aux marchés mondiaux.
+                    </p>
+                    <p>
+                        Avec ses terminaux à conteneurs de dernière génération, ses installations 
+                        polyvalentes et sa zone industrio-portuaire de 3 500 hectares, le Port de France 
+                        accueille chaque année plus de 5 000 escales de navires et traite plus de 
+                        80 millions de tonnes de marchandises.
+                    </p>
+                    <!-- Liste de points forts -->
+                    <ul class="list-unstyled mt-4">
+                        <li class="mb-3">
+                            <i class="bi bi-check-circle-fill me-2" style="color: var(--accent);"></i>
+                            Connexion directe à 600 ports dans 150 pays
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-check-circle-fill me-2" style="color: var(--accent);"></i>
+                            20 000 emplois directs et 45 000 emplois indirects
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-check-circle-fill me-2" style="color: var(--accent);"></i>
+                            Certification ISO 14001 et engagement environnemental
+                        </li>
+                    </ul>
+                    <a href="about.html" class="btn-submit mt-3 d-inline-block">
+                        En savoir plus <i class="bi bi-arrow-right ms-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION CHIFFRES CLÉS
+         ============================================ -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row text-center">
+                <!-- Statistique 1 -->
+                <div class="col-6 col-md-3 stat-item fade-up">
+                    <i class="bi bi-box-seam"></i>
+                    <span class="stat-number" data-target="80">0</span>
+                    <span class="stat-label">Millions de tonnes / an</span>
+                </div>
+                <!-- Statistique 2 -->
+                <div class="col-6 col-md-3 stat-item fade-up delay-1">
+                    <i class="bi bi-geo-alt"></i>
+                    <span class="stat-number" data-target="600">0</span>
+                    <span class="stat-label">Ports connectés</span>
+                </div>
+                <!-- Statistique 3 -->
+                <div class="col-6 col-md-3 stat-item fade-up delay-2">
+                    <i class="bi bi-people"></i>
+                    <span class="stat-number" data-target="20000">0</span>
+                    <span class="stat-label">Emplois directs</span>
+                </div>
+                <!-- Statistique 4 -->
+                <div class="col-6 col-md-3 stat-item fade-up delay-3">
+                    <i class="bi bi-building"></i>
+                    <span class="stat-number" data-target="3500">0</span>
+                    <span class="stat-label">Hectares de zone portuaire</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION SERVICES (Aperçu)
+         ============================================ -->
+    <section class="section-padding bg-light-custom">
+        <div class="container">
+            <!-- Titre de section -->
+            <div class="section-title fade-up">
+                <h2>Nos Services</h2>
+                <p>Des solutions logistiques complètes pour répondre à tous vos besoins de transport maritime et fluvial.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Carte Service 1 -->
+                <div class="col-md-6 col-lg-4 fade-up">
+                    <div class="port-card text-center">
+                        <div class="card-body p-4">
+                            <div class="card-icon">
+                                <i class="bi bi-box-seam"></i>
+                            </div>
+                            <h5>Transport de Marchandises</h5>
+                            <p>Gestion complète des flux de marchandises : conteneurs, vrac solide, vrac liquide et marchandises conventionnelles.</p>
+                            <a href="services.html" style="color: var(--accent); font-weight: 500;">
+                                En savoir plus <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carte Service 2 -->
+                <div class="col-md-6 col-lg-4 fade-up delay-1">
+                    <div class="port-card text-center">
+                        <div class="card-body p-4">
+                            <div class="card-icon">
+                                <i class="bi bi-moisture"></i>
+                            </div>
+                            <h5>Logistique Portuaire</h5>
+                            <p>Stockage, manutention, distribution et gestion de la chaîne logistique intégrée pour une efficacité optimale.</p>
+                            <a href="services.html" style="color: var(--accent); font-weight: 500;">
+                                En savoir plus <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carte Service 3 -->
+                <div class="col-md-6 col-lg-4 fade-up delay-2">
+                    <div class="port-card text-center">
+                        <div class="card-body p-4">
+                            <div class="card-icon">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+                            <h5>Sûreté & Sécurité</h5>
+                            <p>Systèmes de surveillance avancés, contrôle d'accès et conformité aux normes internationales ISPS.</p>
+                            <a href="services.html" style="color: var(--accent); font-weight: 500;">
+                                En savoir plus <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lien vers la page Services -->
+            <div class="text-center mt-5 fade-up">
+                <a href="services.html" class="btn-hero-primary">
+                    Voir tous nos services <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION ACTUALITÉS
+         ============================================ -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title fade-up">
+                <h2>Actualités</h2>
+                <p>Restez informé des dernières nouvelles et événements du Port de France.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Actualité 1 -->
+                <div class="col-md-4 fade-up">
+                    <div class="port-card">
+                        <div class="overflow-hidden">
+                            <img src="https://picsum.photos/seed/port-actu1/400/250.jpg" 
+                                 class="card-img-top" alt="Extension du terminal">
+                        </div>
+                        <div class="card-body">
+                            <span class="badge rounded-pill mb-2" style="background-color: var(--accent); color: var(--primary);">Infrastructure</span>
+                            <h5>Nouveau Terminal Conteneurs</h5>
+                            <p>Inauguration du terminal 4, augmentant la capacité de traitement de 40% avec des équipements de dernière génération.</p>
+                            <small class="text-muted"><i class="bi bi-calendar3 me-1"></i>15 Janvier 2025</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- Actualité 2 -->
+                <div class="col-md-4 fade-up delay-1">
+                    <div class="port-card">
+                        <div class="overflow-hidden">
+                            <img src="https://picsum.photos/seed/port-actu2/400/250.jpg" 
+                                 class="card-img-top" alt="Énergie renouvelable">
+                        </div>
+                        <div class="card-body">
+                            <span class="badge rounded-pill mb-2" style="background-color: var(--accent); color: var(--primary);">Environnement</span>
+                            <h5>Plan Vert 2025</h5>
+                            <p>Lancement du programme de transition énergétique : électrification des quais, énergies renouvelables et mobilité durable.</p>
+                            <small class="text-muted"><i class="bi bi-calendar3 me-1"></i>8 Février 2025</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- Actualité 3 -->
+                <div class="col-md-4 fade-up delay-2">
+                    <div class="port-card">
+                        <div class="overflow-hidden">
+                            <img src="https://picsum.photos/seed/port-actu3/400/250.jpg" 
+                                 class="card-img-top" alt="Partenariat international">
+                        </div>
+                        <div class="card-body">
+                            <span class="badge rounded-pill mb-2" style="background-color: var(--accent); color: var(--primary);">Partenariat</span>
+                            <h5>Accord avec l'Asie</h5>
+                            <p>Nouvel accord de coopération avec les ports de Shanghai et Singapour pour renforcer les lignes maritimes directes.</p>
+                            <small class="text-muted"><i class="bi bi-calendar3 me-1"></i>22 Mars 2025</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION APPEL À ACTION
+         ============================================ -->
+    <section class="section-padding" style="background: linear-gradient(135deg, var(--primary), var(--primary-light));">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 fade-up">
+                    <h2 style="color: var(--white); font-size: 2.2rem;">
+                        Prêt à collaborer avec le Port de France ?
+                    </h2>
+                    <p style="color: rgba(255,255,255,0.8); font-size: 1.1rem; max-width: 600px;">
+                        Contactez notre équipe pour discuter de vos besoins logistiques et 
+                        découvrir comment nous pouvons optimiser vos flux maritimes.
+                    </p>
+                </div>
+                <div class="col-lg-4 text-lg-end mt-4 mt-lg-0 fade-up delay-2">
+                    <a href="contact.html" class="btn-hero-primary">
+                        <i class="bi bi-envelope me-2"></i>Nous contacter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Colonne 1 : À propos -->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h5><i class="bi bi-tsunami me-2" style="color: var(--accent);"></i>Port de France</h5>
+                    <p>
+                        Premier hub portuaire français, le Port de France est un acteur 
+                        majeur du commerce maritime international, au service de l'économie 
+                        nationale et de la transition écologique.
+                    </p>
+                    <!-- Réseaux sociaux -->
+                    <div class="social-links mt-3">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Colonne 2 : Liens rapides -->
+                <div class="col-lg-2 col-md-4 mb-5 mb-md-0">
+                    <h5>Navigation</h5>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">Histoire</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="infrastructures.html">Infrastructures</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 3 : Services -->
+                <div class="col-lg-3 col-md-4 mb-5 mb-md-0">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="services.html">Transport maritime</a></li>
+                        <li><a href="services.html">Logistique portuaire</a></li>
+                        <li><a href="services.html">Manutention</a></li>
+                        <li><a href="services.html">Stockage</a></li>
+                        <li><a href="services.html">Sûreté & Sécurité</a></li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 4 : Contact -->
+                <div class="col-lg-3 col-md-4">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li><i class="bi bi-geo-alt"></i> 1 Quai de la Fosse, 44000 Nantes</li>
+                        <li><i class="bi bi-telephone"></i> +33 2 40 00 00 00</li>
+                        <li><i class="bi bi-envelope"></i> contact@portdefrance.fr</li>
+                        <li><i class="bi bi-clock"></i> Lun - Ven : 8h - 18h</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p>&copy; 2025 Port de France. Tous droits réservés.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <p>
+                            <a href="#" class="me-3">Mentions légales</a>
+                            <a href="#">Politique de confidentialité</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bouton retour en haut -->
+    <button class="back-to-top" id="backToTop" title="Retour en haut">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Scripts personnalisés -->
+    <script>
+        // ============================================
+        // 1. EFFET SCROLL SUR LA NAVBAR
+        // ============================================
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('mainNav');
+            // Ajoute la classe 'scrolled' quand on descend de 50px
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // ============================================
+        // 2. BOUTON RETOUR EN HAUT
+        // ============================================
+        const backToTopBtn = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', function() {
+            // Affiche le bouton après 300px de scroll
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+
+        // Remonte en haut au clic
+        backToTopBtn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // ============================================
+        // 3. ANIMATION D'ENTRÉE (Fade Up)
+        // ============================================
+        const fadeElements = document.querySelectorAll('.fade-up');
+
+        // Observateur d'intersection pour déclencher les animations
+        const fadeObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        // Observer chaque élément
+        fadeElements.forEach(function(el) {
+            fadeObserver.observe(el);
+        });
+
+        // ============================================
+        // 4. COMPTEUR ANIMÉ DES STATISTIQUES
+        // ============================================
+        const statNumbers = document.querySelectorAll('.stat-number');
+        let statAnimated = false; // Pour n'animer qu'une seule fois
+
+        const statObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting && !statAnimated) {
+                    statAnimated = true;
+                    statNumbers.forEach(function(num) {
+                        const target = parseInt(num.getAttribute('data-target'));
+                        const duration = 2000; // 2 secondes
+                        const step = target / (duration / 16); // ~60fps
+                        let current = 0;
+
+                        const timer = setInterval(function() {
+                            current += step;
+                            if (current >= target) {
+                                current = target;
+                                clearInterval(timer);
+                            }
+                            // Formatage avec séparateur de milliers
+                            num.textContent = Math.floor(current).toLocaleString('fr-FR');
+                        }, 16);
+                    });
+                }
+            });
+        }, { threshold: 0.3 });
+
+        // Observer la section statistiques
+        const statsSection = document.querySelector('.stats-section');
+        if (statsSection) {
+            statObserver.observe(statsSection);
+        }
+
+        // ============================================
+        // 5. FERMER LE MENU MOBILE AU CLIC SUR UN LIEN
+        // ============================================
+        document.querySelectorAll('.navbar-nav .nav-link').forEach(function(link) {
+            link.addEventListener('click', function() {
+                const navbarCollapse = document.getElementById('navbarNav');
+                const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+                if (bsCollapse) {
+                    bsCollapse.hide();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Services du Port de France - Transport maritime, logistique, manutention, stockage et sûreté.">
+    <title>Port de France — Services</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ============================================
+         NAVIGATION
+         ============================================ -->
+    <nav class="navbar navbar-expand-lg navbar-port fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-tsunami"></i> Port de <span>France</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Histoire</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="infrastructures.html">Infrastructures</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         HERO REDUIT
+         ============================================ -->
+    <section class="hero-section hero-page" style="background: linear-gradient(135deg, rgba(12,45,72,0.9), rgba(20,83,116,0.8)),
+        url('https://picsum.photos/seed/port-services/1920/800.jpg'); background-size: cover; background-position: center;">
+        <div class="container">
+            <div class="hero-content text-center">
+                <span class="text-uppercase fw-bold" style="color: var(--accent); letter-spacing: 3px; font-size: 0.85rem;">
+                    Nos Services
+                </span>
+                <h1 class="mt-3" style="color: var(--white);">
+                    Des Solutions <span>Maritimes</span><br>Complètes
+                </h1>
+                <p style="color: rgba(255,255,255,0.8); max-width: 600px; margin: 0 auto;">
+                    De la manutention à la logistique intégrée, nous offrons une gamme complète 
+                    de services portuaires de classe mondiale.
+                </p>
+            </div>
+        </div>
+        <div class="hero-waves">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none" style="height:60px;">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,68.87-16.65,104.21-24.37,46.87-10.32,88.75-6.49,133.39,6.6,18.41,5.36,36,12.15,53.71,18.78,12.14,4.54,24.49,8.6,37.29,11.56V0Z" fill="#ffffff"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION SERVICES PRINCIPAUX
+         ============================================ -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title fade-up">
+                <h2>Nos Offres de Service</h2>
+                <p>Des services portuaires adaptés à chaque type de marchandise et chaque besoin logistique.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Service 1 : Transport de Marchandises -->
+                <div class="col-md-6 fade-up">
+                    <div class="port-card">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start gap-4">
+                                <div class="card-icon flex-shrink-0">
+                                    <i class="bi bi-box-seam"></i>
+                                </div>
+                                <div>
+                                    <h5>Transport de Marchandises</h5>
+                                    <p>Gestion complète des flux de marchandises à travers nos terminaux spécialisés :</p>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--accent);"></i>Conteneurs (import / export)</li>
+                                        <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--accent);"></i>Vrac solide (céréales, charbon, minerais)</li>
+                                        <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--accent);"></i>Vrac liquide (pétrole, GNL, produits chimiques)</li>
+                                        <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--accent);"></i>Marchandises conventionnelles</li>
+                                        <li><i class="bi bi-check2 me-2" style="color: var(--accent);"></i>Projets lourds et hors gabarit</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 : Logistique Portuaire -->
+                <div class="col-md-6 fade-up delay-1">
+                    <div class="port-card">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start gap-4">
+                                <div class="card-icon flex-shrink-0">
+                                    <i class="bi bi-moisture"></i>
+                                </div>
+                                <div>
+                                    <h5>Logistique Portuaire</h5>
+                                    <p>Solutions logistiques intégrées pour optimiser votre chaîne d'approvisionnement :</p>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--accent);"></i>Stockage couvert et en plein air</li>
+                                        <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--accent);"></i>Plateformes de distribution multi-modales</li>
+                                        <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--accent);"></i>Transport routier et ferroviaire</li>
+                                        <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--accent);"></i>Cabotage fluvial sur la Loire</li>
+                                        <li><i class="bi bi-check2 me-2" style="color: var(--accent);"></i>Gestion douanière simplifiée</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 : Manutention -->
+                <div class="col-md-6 fade-up">
+                    <div class="port-card">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start gap-4">
+                                <div class="card-icon flex-shrink-0">
+                                    <i class="bi bi-gear-wide-connected"></i>
+                                </div>
+                                <div>
+                                    <h5>Manutention & Chargement</h5>
+                                    <p>Équipements de pointe pour une manutention efficace et sécurisée :</p>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--accent);"></i>Portiques à conteneurs super post-panamax</li>
+                                        <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--accent);"></i>Grues mobiles de 50 à 150 tonnes</li>
+                                        <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--accent);"></i>Systèmes de pompes pour vrac liquide</li>
+                                        <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--accent);"></i>Convoyeurs et élévateurs à grains</li>
+                                        <li><i class="bi bi-check2 me-2" style="color: var(--accent);"></i>Levage de charges exceptionnelles</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4 : Sûreté & Sécurité -->
+                <div class="col-md-6 fade-up delay-1">
+                    <div class="port-card">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start gap-4">
+                                <div class="card-icon flex-shrink-0">
+                                    <i class="bi bi-shield-check"></i>
+                                </div>
+                                <div>
+                                    <h5>Sûreté & Sécurité</h5>
+                                    <p>Dispositifs de sécurité conformes aux normes internationales les plus strictes :</p>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--accent);"></i>Conformité ISPS Code</li>
+                                        <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--accent);"></i>Vidéo-surveillance 24/7 (300+ caméras)</li>
+                                        <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--accent);"></i>Contrôle d'accès biométrique</li>
+                                        <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--accent);"></i>Équipe anti-pollution dédiée</li>
+                                        <li><i class="bi bi-check2 me-2" style="color: var(--accent);"></i>Plan d'urgence maritime (POLMAR)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 5 : Services aux Navires -->
+                <div class="col-md-6 fade-up">
+                    <div class="port-card">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start gap-4">
+                                <div class="card-icon flex-shrink-0">
+                                    <i class="bi bi-water"></i>
+                                </div>
+                                <div>
+                                    <h5>Services aux Navires</h5>
+                                    <p>Accompagnement complet des escales maritimes :</p>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--accent);"></i>Pilotage et remorquage</li>
+                                        <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--accent);"></i>Lamanage et assistanat</li>
+                                        <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--accent);"></i>Avitaillement (carburant, vivres, eau)</li>
+                                        <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--accent);"></i>Réparations navires</li>
+                                        <li><i class="bi bi-check2 me-2" style="color: var(--accent);"></i>Gestion des déchets maritimes</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 6 : Services Numériques -->
+                <div class="col-md-6 fade-up delay-1">
+                    <div class="port-card">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start gap-4">
+                                <div class="card-icon flex-shrink-0">
+                                    <i class="bi bi-cpu"></i>
+                                </div>
+                                <div>
+                                    <h5>Services Numériques</h5>
+                                    <p>Outils digitaux pour une gestion fluide de vos opérations :</p>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--accent);"></i>Portail en ligne de réservation d'escales</li>
+                                        <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--accent);"></i>Suivi des marchandises en temps réel</li>
+                                        <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--accent);"></i>Dématérialisation douanière</li>
+                                        <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--accent);"></i>API ouvertes pour intégration SI</li>
+                                        <li><i class="bi bi-check2 me-2" style="color: var(--accent);"></i>Dashboard performances portuaires</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION PROCESSUS D'ESCALE
+         ============================================ -->
+    <section class="section-padding bg-light-custom">
+        <div class="container">
+            <div class="section-title fade-up">
+                <h2>Processus d'Escale</h2>
+                <p>De l'arrivée au départ, chaque étape est optimisée pour garantir une escale fluide et rapide.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Étape 1 -->
+                <div class="col-md-6 col-lg-3 fade-up">
+                    <div class="text-center">
+                        <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-3"
+                             style="width: 80px; height: 80px; background-color: var(--primary);">
+                            <span style="font-family: var(--font-heading); font-size: 2rem; color: var(--accent); font-weight: 700;">1</span>
+                        </div>
+                        <h5>Demande d'escale</h5>
+                        <p>Réservation en ligne via notre portail sécurisé. Dépôt des documents 72h avant l'arrivée.</p>
+                    </div>
+                </div>
+                <!-- Étape 2 -->
+                <div class="col-md-6 col-lg-3 fade-up delay-1">
+                    <div class="text-center">
+                        <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-3"
+                             style="width: 80px; height: 80px; background-color: var(--primary);">
+                            <span style="font-family: var(--font-heading); font-size: 2rem; color: var(--accent); font-weight: 700;">2</span>
+                        </div>
+                        <h5>Arrivée & Accueil</h5>
+                        <p>Pilotage, remorquage et amarrage. Inspection et autorisation d'accès au quai assigné.</p>
+                    </div>
+                </div>
+                <!-- Étape 3 -->
+                <div class="col-md-6 col-lg-3 fade-up delay-2">
+                    <div class="text-center">
+                        <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-3"
+                             style="width: 80px; height: 80px; background-color: var(--primary);">
+                            <span style="font-family: var(--font-heading); font-size: 2rem; color: var(--accent); font-weight: 700;">3</span>
+                        </div>
+                        <h5>Opérations portuaires</h5>
+                        <p>Chargement/déchargement, manutention, passage douanier et contrôle qualité.</p>
+                    </div>
+                </div>
+                <!-- Étape 4 -->
+                <div class="col-md-6 col-lg-3 fade-up delay-3">
+                    <div class="text-center">
+                        <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-3"
+                             style="width: 80px; height: 80px; background-color: var(--primary);">
+                            <span style="font-family: var(--font-heading); font-size: 2rem; color: var(--accent); font-weight: 700;">4</span>
+                        </div>
+                        <h5>Départ & Suivi</h5>
+                        <p>Désamarrage, facturation électronique et suivi des marchandises jusqu'à destination finale.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION AVANTAGES TARIFAIRES
+         ============================================ -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0 fade-up">
+                    <span class="text-uppercase fw-bold" style="color: var(--accent); font-size: 0.85rem; letter-spacing: 2px;">
+                        Tarification
+                    </span>
+                    <h2 class="mt-2 mb-4" style="font-size: 2rem;">
+                        Une Tarification Transparente & Compétitive
+                    </h2>
+                    <p>
+                        Le Port de France applique une tarification claire, compétitive et conforme 
+                        aux réglementations européennes. Nos tarifs sont révisés annuellement et 
+                        publiés sur notre site pour une totale transparence.
+                    </p>
+                    <!-- Tableau des principaux tarifs -->
+                    <div class="table-responsive mt-4">
+                        <table class="table table-hover" style="border-color: var(--border-light);">
+                            <thead style="background-color: var(--primary); color: var(--white);">
+                                <tr>
+                                    <th class="py-3 px-4 rounded-start">Service</th>
+                                    <th class="py-3 px-4 rounded-end">À partir de</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="py-3 px-4"><i class="bi bi-box me-2" style="color: var(--accent);"></i>Taxe conteneur (20')</td>
+                                    <td class="py-3 px-4 fw-bold" style="color: var(--primary);">85 €</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4"><i class="bi bi-box me-2" style="color: var(--accent);"></i>Taxe conteneur (40')</td>
+                                    <td class="py-3 px-4 fw-bold" style="color: var(--primary);">130 €</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4"><i class="bi bi-water me-2" style="color: var(--accent);"></i>Droits de port (par GT)</td>
+                                    <td class="py-3 px-4 fw-bold" style="color: var(--primary);">0,12 €</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4"><i class="bi bi-gear me-2" style="color: var(--accent);"></i>Manutention (tonne)</td>
+                                    <td class="py-3 px-4 fw-bold" style="color: var(--primary);">4,50 €</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <small class="text-muted">* Tarifs indicatifs 2025. Contactez-nous pour un devis personnalisé.</small>
+                </div>
+                <!-- Image -->
+                <div class="col-lg-6 fade-up delay-2">
+                    <img src="https://picsum.photos/seed/port-tarif/600/500.jpg" 
+                         alt="Tarification portuaire" 
+                         class="img-fluid rounded-4 shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION CTA (Appel à l'action)
+         ============================================ -->
+    <section class="section-padding" style="background: linear-gradient(135deg, var(--primary), var(--primary-light));">
+        <div class="container text-center fade-up">
+            <h2 style="color: var(--white); font-size: 2.2rem;">Besoin d'un Devis Personnalisé ?</h2>
+            <p style="color: rgba(255,255,255,0.8); max-width: 600px; margin: 20px auto 35px;">
+                Notre équipe commerciale est à votre disposition pour étudier vos besoins 
+                et vous proposer une offre sur mesure.
+            </p>
+            <a href="contact.html" class="btn-hero-primary">
+                <i class="bi bi-envelope me-2"></i>Demander un devis
+            </a>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h5><i class="bi bi-tsunami me-2" style="color: var(--accent);"></i>Port de France</h5>
+                    <p>Premier hub portuaire français au service de l'économie nationale et de la transition écologique.</p>
+                    <div class="social-links mt-3">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-5 mb-md-0">
+                    <h5>Navigation</h5>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">Histoire</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="infrastructures.html">Infrastructures</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-5 mb-md-0">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="services.html">Transport maritime</a></li>
+                        <li><a href="services.html">Logistique portuaire</a></li>
+                        <li><a href="services.html">Manutention</a></li>
+                        <li><a href="services.html">Stockage</a></li>
+                        <li><a href="services.html">Sûreté & Sécurité</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li><i class="bi bi-geo-alt"></i> 1 Quai de la Fosse, 44000 Nantes</li>
+                        <li><i class="bi bi-telephone"></i> +33 2 40 00 00 00</li>
+                        <li><i class="bi bi-envelope"></i> contact@portdefrance.fr</li>
+                        <li><i class="bi bi-clock"></i> Lun - Ven : 8h - 18h</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p>&copy; 2025 Port de France. Tous droits réservés.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <p><a href="#" class="me-3">Mentions légales</a><a href="#">Politique de confidentialité</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" title="Retour en haut"><i class="bi bi-chevron-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Scripts identiques aux autres pages (navbar scroll, back-to-top, fade animations, menu mobile)
+        window.addEventListener('scroll', function() {
+            document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY > 50);
+        });
+        const backToTopBtn = document.getElementById('backToTop');
+        window.addEventListener('scroll', function() {
+            backToTopBtn.classList.toggle('show', window.scrollY > 300);
+        });
+        backToTopBtn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        const fadeObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.fade-up').forEach(function(el) { fadeObserver.observe(el); });
+        document.querySelectorAll('.navbar-nav .nav-link').forEach(function(link) {
+            link.addEventListener('click', function() {
+                var c = bootstrap.Collapse.getInstance(document.getElementById('navbarNav'));
+                if (c) c.hide();
+            });
+        });
+    </script>
+</body>
+</html>

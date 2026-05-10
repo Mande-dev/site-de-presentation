@@ -1,0 +1,811 @@
+/* ============================================
+   PORT DE FRANCE - Styles Personnalisés
+   ============================================ */
+
+/* --- Import de la police Google Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* --- Variables CSS (palette maritime) --- */
+:root {
+    --primary: #0c2d48;       /* Bleu marine foncé */
+    --primary-light: #145374; /* Bleu marine moyen */
+    --secondary: #2e8bc0;     /* Bleu océan */
+    --accent: #c8a45a;        /* Or / Doré */
+    --accent-light: #d4b76a;  /* Or clair */
+    --light-bg: #f0f4f8;      /* Fond clair */
+    --white: #ffffff;
+    --dark: #1a1a2e;          /* Texte foncé */
+    --gray: #6b7280;          /* Texte secondaire */
+    --border-light: #e2e8f0;  /* Bordure claire */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+/* --- Reset et styles de base --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--dark);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+/* --- Typographie --- */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--primary);
+}
+
+p {
+    color: var(--gray);
+    line-height: 1.8;
+}
+
+/* ============================================
+   NAVIGATION
+   ============================================ */
+
+/* Navbar personnalisée */
+.navbar-port {
+    background-color: rgba(12, 45, 72, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+/* Navbar au scroll (classe ajoutée via JS) */
+.navbar-port.scrolled {
+    background-color: rgba(12, 45, 72, 0.98);
+    padding: 8px 0;
+    border-bottom: 2px solid var(--accent);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo du port */
+.navbar-brand {
+    font-family: var(--font-heading) !important;
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    color: var(--white) !important;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-brand i {
+    color: var(--accent);
+    font-size: 1.8rem;
+}
+
+.navbar-brand span {
+    color: var(--accent);
+}
+
+/* Liens de navigation */
+.navbar-port .nav-link {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 8px 18px !important;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+/* Effet hover sur les liens */
+.navbar-port .nav-link:hover,
+.navbar-port .nav-link.active {
+    color: var(--accent) !important;
+}
+
+/* Ligne sous le lien actif */
+.navbar-port .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 18px;
+    right: 18px;
+    height: 2px;
+    background-color: var(--accent);
+}
+
+/* Bouton hamburger */
+.navbar-toggler {
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    padding: 6px 10px;
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+/* ============================================
+   HERO SECTION (Bannière principale)
+   ============================================ */
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(12, 45, 72, 0.85), rgba(20, 83, 116, 0.75)),
+                url('https://picsum.photos/seed/portfrance-hero/1920/1080.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+/* Contenu du hero */
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    color: var(--white);
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+}
+
+.hero-section h1 span {
+    color: var(--accent);
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 600px;
+    margin-bottom: 35px;
+}
+
+/* Boutons du hero */
+.btn-hero-primary {
+    background-color: var(--accent);
+    color: var(--primary);
+    border: none;
+    padding: 14px 35px;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-hero-primary:hover {
+    background-color: var(--accent-light);
+    color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(200, 164, 90, 0.4);
+}
+
+.btn-hero-secondary {
+    background-color: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+    padding: 12px 35px;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-hero-secondary:hover {
+    background-color: var(--white);
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+/* Vagues animées en bas du hero */
+.hero-waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.hero-waves svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 80px;
+}
+
+/* ============================================
+   HERO REDUIT (Pour les pages internes)
+   ============================================ */
+.hero-page {
+    min-height: 50vh;
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+.hero-page h1 {
+    font-size: 3rem;
+}
+
+/* ============================================
+   SECTIONS COMMUNES
+   ============================================ */
+
+/* Section titre centré */
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+/* Ligne dorée sous le titre */
+.section-title h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent);
+    margin: 15px auto 0;
+}
+
+.section-title p {
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+/* Padding des sections */
+.section-padding {
+    padding: 100px 0;
+}
+
+/* Fond alterné */
+.bg-light-custom {
+    background-color: var(--light-bg);
+}
+
+/* ============================================
+   CARTES / CARDS PERSONNALISÉES
+   ============================================ */
+.port-card {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+    height: 100%;
+    border: 1px solid var(--border-light);
+}
+
+.port-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(12, 45, 72, 0.15);
+}
+
+.port-card .card-img-top {
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.port-card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.port-card .card-body {
+    padding: 25px;
+}
+
+.port-card .card-body h5 {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+}
+
+.port-card .card-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    transition: all 0.3s ease;
+}
+
+.port-card:hover .card-icon {
+    background: linear-gradient(135deg, var(--accent), var(--accent-light));
+    transform: scale(1.1);
+}
+
+.port-card .card-icon i {
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+/* ============================================
+   SECTION CHIFFRES CLÉS (Statistiques)
+   ============================================ */
+.stats-section {
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    padding: 80px 0;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.stat-item i {
+    font-size: 2.5rem;
+    color: var(--accent);
+    margin-bottom: 15px;
+}
+
+.stat-number {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--white);
+    display: block;
+}
+
+.stat-label {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.95rem;
+    margin-top: 5px;
+}
+
+/* ============================================
+   SECTION TIMELINE (Histoire)
+   ============================================ */
+.timeline {
+    position: relative;
+    padding: 40px 0;
+}
+
+/* Ligne verticale centrale */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 100%;
+    background-color: var(--border-light);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+/* Point sur la timeline */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: var(--accent);
+    border: 4px solid var(--white);
+    border-radius: 50%;
+    top: 25px;
+    z-index: 2;
+    box-shadow: 0 0 0 3px var(--accent);
+}
+
+.timeline-content {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    width: 45%;
+    position: relative;
+}
+
+/* Flèche pointant vers la ligne */
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-left: auto;
+    margin-right: 55%;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: 55%;
+}
+
+.timeline-year {
+    display: inline-block;
+    background-color: var(--accent);
+    color: var(--primary);
+    font-weight: 700;
+    padding: 4px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* ============================================
+   SECTION INFRASTRUCTURES - Grille d'images
+   ============================================ */
+.infra-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    height: 300px;
+}
+
+.infra-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.infra-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Overlay avec infos */
+.infra-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(12, 45, 72, 0.95), transparent);
+    padding: 30px 25px 25px;
+    transform: translateY(60px);
+    transition: transform 0.4s ease;
+}
+
+.infra-card:hover .infra-overlay {
+    transform: translateY(0);
+}
+
+.infra-overlay h5 {
+    color: var(--white);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.infra-overlay p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* ============================================
+   SECTION CONTACT
+   ============================================ */
+.contact-info-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+    border: 1px solid var(--border-light);
+}
+
+.contact-info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(12, 45, 72, 0.12);
+}
+
+.contact-info-card i {
+    font-size: 2.5rem;
+    color: var(--accent);
+    margin-bottom: 15px;
+}
+
+.contact-info-card h5 {
+    margin-bottom: 10px;
+}
+
+/* Formulaire de contact */
+.contact-form .form-control,
+.contact-form .form-select {
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 12px 18px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    background-color: var(--white);
+}
+
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 3px rgba(46, 139, 192, 0.15);
+}
+
+.contact-form label {
+    font-weight: 500;
+    color: var(--primary);
+    margin-bottom: 6px;
+}
+
+.btn-submit {
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: 14px 40px;
+    font-weight: 600;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: var(--primary-light);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(12, 45, 72, 0.3);
+}
+
+/* ============================================
+   SECTION PARTENAIRES
+   ============================================ */
+.partner-logo {
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: all 0.4s ease;
+    max-height: 50px;
+}
+
+.partner-logo:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.footer {
+    background-color: var(--primary);
+    color: rgba(255, 255, 255, 0.7);
+    padding-top: 80px;
+}
+
+.footer h5 {
+    color: var(--white);
+    font-size: 1.15rem;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.footer h5::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: var(--accent);
+}
+
+.footer p, .footer li, .footer a {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: var(--accent) !important;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li i {
+    color: var(--accent);
+    margin-right: 8px;
+    font-size: 0.85rem;
+}
+
+/* Réseaux sociaux */
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: var(--white) !important;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.social-links a:hover {
+    background-color: var(--accent);
+    color: var(--primary) !important;
+    transform: translateY(-3px);
+}
+
+/* Footer bottom */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 25px 0;
+    margin-top: 50px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* ============================================
+   BOUTON RETOUR EN HAUT
+   ============================================ */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--accent);
+    color: var(--primary);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+    box-shadow: 0 4px 15px rgba(200, 164, 90, 0.4);
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background-color: var(--accent-light);
+    transform: translateY(-3px);
+}
+
+/* ============================================
+   ANIMATIONS D'ENTRÉE
+   ============================================ */
+
+/* Animation de fondu vers le haut */
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Délais pour les animations en cascade */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+/* Tablette */
+@media (max-width: 991.98px) {
+    .hero-section h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-page h1 {
+        font-size: 2.3rem;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    /* Timeline sur tablette : ligne à gauche */
+    .timeline::before {
+        left: 30px;
+    }
+
+    .timeline-item::before {
+        left: 30px;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content,
+    .timeline-item:nth-child(even) .timeline-content {
+        margin-left: 70px;
+        width: calc(100% - 70px);
+    }
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+    .hero-section {
+        min-height: 85vh;
+        background-attachment: scroll;
+    }
+
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-page h1 {
+        font-size: 2rem;
+    }
+
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+
+    .section-padding {
+        padding: 60px 0;
+    }
+
+    .stat-number {
+        font-size: 2.2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .btn-hero-primary,
+    .btn-hero-secondary {
+        padding: 12px 25px;
+        font-size: 0.9rem;
+    }
+
+    .footer {
+        padding-top: 50px;
+    }
+}
+
+/* Petit mobile */
+@media (max-width: 575.98px) {
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem !important;
+    }
+}
